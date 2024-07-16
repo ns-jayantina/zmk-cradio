@@ -44,7 +44,7 @@
 //            bindings = <&kp EQUAL>;
 //            key-positions = <1 2>;
 //        };
-    };
+//    };
 
     keymap {
         compatible = "zmk,keymap";
