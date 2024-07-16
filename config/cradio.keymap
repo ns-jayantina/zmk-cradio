@@ -53,7 +53,7 @@
         combo_esc {
             timeout-ms = <50>;
             key-positions = <2 3 6 7>;
-            bindings = <&kp >;
+            bindings = <&kp ESC>;
         };
     };
 
