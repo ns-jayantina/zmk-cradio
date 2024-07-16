@@ -50,10 +50,10 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_apos {
             timeout-ms = <50>;
             key-positions = <2 3 6 7>;
-            bindings = <&kp ESC>;
+            bindings = <&kp APOS>;
         };
     };
 
