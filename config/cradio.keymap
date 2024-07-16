@@ -42,11 +42,11 @@
         //│   Z       │   X       │   C       │   A       │   B       │   │   N       │   M       │  , <      │  . >      │  / ?      │
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
-            &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
+            &kp Q         &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I      &kp O        &kp P
             HRML(V,       S,          D,          F)          &kp G           &kp H       HRMR(J,     K,          L,          SQT)
         //HRML(V,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
-            &kp Z      &kp X      &kp C      &kp A      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
-                                            &lt 1 TAB   &kp ENTER     &kp SPACE  &lt 2 BSPC
+            &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
+                                                  &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
             >;
         };
 
