@@ -40,10 +40,10 @@
             bindings = <&kp SQT>;
             key-positions = <2 3>;
         };
-        CEQUAL {
-            bindings = <&kp EQUAL>;
-            key-positions = <1 2>;
-        };
+//        CEQUAL {
+//            bindings = <&kp EQUAL>;
+//            key-positions = <1 2>;
+//        };
     };
 
     keymap {
