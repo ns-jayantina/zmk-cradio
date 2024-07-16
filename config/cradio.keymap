@@ -30,6 +30,22 @@
         };
     };
 
+    combos (
+        compatible = "zmk,combos";
+        CAPOS {
+            bindings = <&kp APOS>;
+            key-positions = <2 3 6 7>;
+        };
+        CSQT {
+            bindings = <&kp SQT>;
+            key-positions = <2 3>;
+        };
+        CEQUAL {
+            bindings = <&kp EQUAL>;
+            key-positions = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -60,9 +76,9 @@
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
         //                                    |           | ESC       |   |           |           |
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
-            &kp INS      &trans     &kp UARW    &kp PG DN   &kp PG UP      &kp ASTERISK   &kp N1      &kp N2      &kp N3     &trans
+            &kp INS      &trans     &kp UARW    &kp PG_DN   &kp PG_UP      &kp ASTERISK   &kp N1      &kp N2      &kp N3     &trans
             &kp DEL      &kp LARW   &kp DARW    &kp RARW    &kp CAPS       &kp PLUS       &kp N4      &kp N5      &kp N6     &trans
-            &trans       &trans     &trans      &kp HOME    &kp END        &kp MINUS    &kp N7  &kp N8 &kp N9 &kp N0
+            &trans       &trans     &trans      &kp HOME    &kp END        &kp MINUS      &kp N7      &kp N8      &kp N9     &kp N0
                                                             &kp ESC
                     >;
         };
