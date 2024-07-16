@@ -36,7 +36,6 @@
             timeout-ms = <50>;
             key-positions = <2 3 6 7>;
             bindings = <&kp APOS>;
-            key-positions = <2 3 6 7>;
         };
 //        CSQT {
 //            bindings = <&kp SQT>;
