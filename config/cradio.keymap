@@ -36,10 +36,10 @@
             bindings = <&kp APOS>;
             key-positions = <2 3 6 7>;
         };
-        CSQT {
-            bindings = <&kp SQT>;
-            key-positions = <2 3>;
-        };
+//        CSQT {
+//            bindings = <&kp SQT>;
+//            key-positions = <2 3>;
+//        };
 //        CEQUAL {
 //            bindings = <&kp EQUAL>;
 //            key-positions = <1 2>;
