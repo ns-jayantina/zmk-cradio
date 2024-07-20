@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHIFT k4
-#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
+//#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHIFT k4
+//#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
 
 / {
     behaviors {
@@ -22,13 +22,13 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    //conditional_layers {
+    //    compatible = "zmk,conditional-layers";
+    //    tri_layer {
+    //        if-layers = <1 2>;
+    //        then-layer = <3>;
+    //    };
+    //};
 
     combos {
         compatible = "zmk,combos";
@@ -60,10 +60,14 @@
         //│   Z       │   X       │   C       │   A       │   B       │   │   N       │   M       │  , <      │  . >      │  / ?      │
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
-            &kp Q         &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I      &kp O        &kp P
-            &kp V         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
-            &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
-                                                  &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
+        //    &kp Q         &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I      &kp O        &kp P
+        //    &kp V         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
+        //    &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
+        //                                          &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
+              &kp Q         &kp W           &kp E            &kp R          &kp T         &hm LC(LA(DEL))) Y     &hm LG(LS(S)) U     &hm LG(LS(N5)) I     &kp O         &kp P
+              &kp V         &hm LCTRL S     &hm LSHIFT D     &hm LALT F     &hm LGUI G    &hm RGUI H             &hm RALT J          &hm RSHIFT K         &hm RCTRL     &kp SEMI
+              &kp Z         &kp X           &kp C            &kp A          &kp B         &kp N                  &kp M               &kp COMMA            &kp DOT       &kp FSLH
+                                                                            &lt 3 TAB     &kp ENTER              &kpSPC              &lt 4 BSPC
             >;
         };
 
