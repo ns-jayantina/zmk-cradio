@@ -8,6 +8,7 @@
 // Home row mods macro
 //#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LALT k2  &ht LCTRL k3  &ht LSHIFT k4
 //#define HRMR(k1,k2,k3,k4) &ht RSHIFT k1  &ht RCTRL k2  &ht RALT k3  &ht RGUI k4
+
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <250>;
@@ -22,6 +23,15 @@
             tapping-term-ms = <250>;
             quick_tap_ms = <200>;
             flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+            ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
     };
@@ -68,10 +78,10 @@
         //    &kp V         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
         //    &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
         //                                          &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
-              &kp Q         &kp W           &kp E            &kp R          &kp T         &mt LC(LA(DEL))) Y     &mt LG(LS(S)) U     &mt LG(LS(N5)) I     &kp O         &kp P
+              &kp Q         &kp W           &kp E            &kp R          &kp T         &mt LC(LA(DEL))) Y     &mt LG(LS(S)) U     //&mt LG(LS(N5)) I     &kp O         &kp P
               &kp V         &hm LCTRL S     &hm LSHIFT D     &hm LALT F     &hm LGUI G    &hm RGUI H             &hm RALT J          &hm RSHIFT K         &hm RCTRL     &kp SEMI
               &kp Z         &kp X           &kp C            &kp A          &kp B         &kp N                  &kp M               &kp COMMA            &kp DOT       &kp FSLH
-                                                                            &lt 3 TAB     &kp ENTER              &kp SPC              &lt 4 BSPC
+                                                                            &lt 3 TAB     &kp ENTER              &kp SPC             &lt 4 BSPC
             >;
         };
 
