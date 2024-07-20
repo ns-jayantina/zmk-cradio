@@ -78,10 +78,10 @@
         //    &kp V         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
         //    &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
         //                                          &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
-              &kp Q         &kp W           &kp E            &kp R          &kp T         &mt LC(LA(DEL))) Y     //&mt LG(LS(S)) U     &mt LG(LS(N5)) I     &kp O         &kp P
+              //&kp Q         &kp W           &kp E            &kp R          &kp T         &mt LC(LA(DEL))) Y     &mt LG(LS(S)) U     &mt LG(LS(N5)) I     &kp O         &kp P
               &kp V         &hm LCTRL S     &hm LSHIFT D     &hm LALT F     &hm LGUI G    &hm RGUI H             &hm RALT J          &hm RSHIFT K         &hm RCTRL     &kp SEMI
               &kp Z         &kp X           &kp C            &kp A          &kp B         &kp N                  &kp M               &kp COMMA            &kp DOT       &kp FSLH
-                                                                            &lt 3 TAB     &kp ENTER              &kp SPACE             &lt 4 BSPC
+                                                             &lt 3 TAB      &kp ENTER     &kp SPACE              &lt 4 BSPC
             >;
         };
 
