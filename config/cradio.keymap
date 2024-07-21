@@ -26,15 +26,15 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        //hm: homerow_mods {
-        //    compatible = "zmk,behavior-hold-tap";
-        //    label = "HOMEROW_MODS";
-        //    #binding-cells = <4>;
-        //   tapping-term-ms = <250>;
-        //    quick_tap_ms = <200>;
-        //    flavor = "tap-preferred";
-        //    bindings = <&kp>, <&kp>;
-        //};
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <4>;
+           tapping-term-ms = <250>;
+            quick_tap_ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
         //td: tapdance {
         //    compatible = "zmk,behavior-hold-tap";
         //    label = "TAPDANCE";
