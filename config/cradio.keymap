@@ -104,7 +104,7 @@
         //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┤
         //│           │           │           │ HOME      │ END       │   │   -       │   7       │   8       │   9       │  0        │
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
-        //                                    |           | ESC       |   |           |           |
+        //                                    |           |           |   |           |           |
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
         //    &kp INS      &trans     &kp UARW    &kp PG_DN   &kp PG_UP      &kp ASTERISK   &kp N1      &kp N2      &kp N3     &trans
         //    &kp DEL      &kp LARW   &kp DARW    &kp RARW    &kp CAPS       &kp PLUS       &kp N4      &kp N5      &kp N6     &trans
@@ -126,7 +126,7 @@
         //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┤
         //│ F7        │ F8        │ F9        │    {      │    }      │   │   _       │   |       │   F12     │           │  \        │
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
-        //                                    |           |           |   |           |           |
+        //                                    | 3 TAB     |           |   |           | 4 BSPC    |
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
         //    &kp F1      &kp F2      &kp F3      &kp LBKT    &kp RBKT        &kp CARET   &kp AMPS    &kp F10     &kp F11     &kp TILDE
         //    &kp F4      &kp F5      &kp F6      &kp LPAR    &kp RPAR        &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT
@@ -139,14 +139,14 @@
             >;
         };
 
-        //media_layer (
-        //    bindings = <
-        //    &trans &trans &trans &kp C_PREV &kp C_NEXT &trans &to 0 &to 1 &to 2 &to 5
-        //    &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_PP &to 6 &to 7 &trans
-        //    &trans &trans &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &trans &trans &trans &trans &trans
-        //    &lt 3 TAB &trans &trans &lt 4 BSPC   
-        //    >;
-        //};
+        media_layer (
+            bindings = <
+            &trans &trans &trans &kp C_PREV &kp C_NEXT &trans &to 0 &to 1 &to 2 &to 5
+            &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_PP &to 6 &to 7 &trans
+            &trans &trans &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &trans &trans &trans &trans &trans
+            &lt 3 TAB &trans &trans &lt 4 BSPC   
+            >;
+        };
 
         tri_layer {
             bindings = <
