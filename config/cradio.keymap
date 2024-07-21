@@ -56,9 +56,9 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_apos {
-             bindings = <&kp APOS>;
-             key-positions = <2 4>;
+        combo_dqt {
+             bindings = <&kp DQT>;
+             key-positions = <2 3 6 7>;
         };
         combo_sqt {
              bindings = <&kp SQT>;
