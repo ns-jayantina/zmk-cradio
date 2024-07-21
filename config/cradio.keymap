@@ -141,10 +141,10 @@
 
         media_layer (
             bindings = <
-            &trans &trans &trans &kp C_PREV &kp C_NEXT &trans &to 0 &to 1 &to 2 &to 5
-            &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &kp C_PP &to 6 &to 7 &trans
-            &trans &trans &kp C_BRI_MIN &kp C_BRI_DN &kp C_BRI_UP &trans &trans &trans &trans &trans
-            &lt 3 TAB &trans &trans &lt 4 BSPC   
+            &trans     &trans     &trans            &kp C_PREV     &kp C_NEXT     &trans     &to 0     &to 1     &to 2     &to 5
+            &trans     &trans     &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP   &trans     &kp C_PP  &to 6     &to 7     &trans
+            &trans     &trans     &trans     &trans  &trans   &trans     &trans    &trans    &trans    &trans
+                                                    &lt 3 TAB      &trans         &trans     &lt 4 BSPC   
             >;
         };
 
