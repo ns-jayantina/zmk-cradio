@@ -57,17 +57,25 @@
     combos {
         compatible = "zmk,combos";
         combo_apos {
-            key-positions = <2 3 6 7>;
-            bindings = <&kp APOS>;
+             bindings = <&kp APOS>;
+             key-positions = <2 3 6 7>;
         };
         combo_sqt {
-            bindings = <&kp SQT>;
-            key-positions = <2 3>;
+             bindings = <&kp SQT>;
+             key-positions = <2 3>;
         };
         combo_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <1 2>;
+             bindings = <&kp EQUAL>;
+             key-positions = <6 7>;
         };
+        combo_esc {
+         bindings = <&kp ESC>;
+         key-positions = <1 2>;
+        };
+        combo_tab {
+         bindings = <&kp TAB>;
+         key-positions = <11 12>;
+        }; 
     };
 
 
@@ -91,7 +99,7 @@
               &kp Q         &kp W        &kp E         &kp R       &kp T       &hm LC(LA(DEL)) Y  &hm LG(LS(S)) U  &hm LG(LS(N5)) I  &kp O         &kp P
               &kp V         &hm LCTRL S  &hm LSHIFT D  &hm LALT F  &hm LGUI G  &hm RGUI H          &hm RALT J       &hm RSHIFT K     &hm RCTRL L   &kp SEMI
               &kp Z         &kp X        &kp C         &kp A       &kp B       &kp N               &kp M            &kp COMMA        &kp DOT       &kp FSLH
-                                                       &lt 3 TAB   &kp ENTER   &kp SPACE           &lt 4 BSPC
+                                                       &to 4       &kp ENTER   &kp SPACE           &lt 3 BSPC
             >;
         };
 
@@ -113,7 +121,7 @@
               &kp INS      &trans     &kp UARW    &kp PG_DN   &kp PG_UP      &kp ASTERISK   &kp N1      &kp N2      &kp N3     &trans
               &kp DEL      &kp LARW   &kp DARW    &kp RARW    &kp CAPS       &kp PLUS       &kp N4      &kp N5      &kp N6     &trans
               &trans       &trans     &trans      &kp HOME    &kp END        &kp MINUS      &kp N7      &kp N8      &kp N9     &kp N0
-                                                  &lt 3 TAB   &trans         &trans         &lt 4 BSPC   
+                                                  &to 4       &trans         &trans         &lt 3 BSPC   
                     >;
         };
 
@@ -135,7 +143,7 @@
               &kp F1      &kp F2      &kp F3      &kp LBKT    &kp RBKT        &kp CARET   &kp AMPS    &kp F10     &kp F11     &kp TILDE
               &kp F4      &kp F5      &kp F6      &kp LPAR    &kp RPAR        &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT
               &kp F7      &kp F8      &kp F9      &kp LBRC    &kp RBRC        &kp UNDER   &kp PIPE    &kp F12     &trans      &kp BSLH
-                                                  &lt 3 TAB   &trans          &trans      &lt 4 BSPC   
+                                                  &to 4       &trans          &trans      &lt 3 BSPC   
             >;
         };
 
@@ -144,7 +152,7 @@
             &trans     &trans     &trans            &kp C_PREV     &kp C_NEXT     &trans     &to 0     &to 1     &to 2     &to 5
             &trans     &trans     &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP   &trans     &kp C_PP  &to 6     &to 7     &trans
             &trans     &trans     &kp C_BRI_MIN     &kp C_BRI_DN   &kp C_BRI_UP   &trans     &trans    &trans    &trans    &trans
-                                                    &lt 3 TAB      &trans         &trans     &lt 4 BSPC   
+                                                    &lt 3 TAB      &trans         &trans     &lt 3 BSPC   
             >;
         };
 
@@ -160,7 +168,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &lt 3 TAB  &trans         &trans     &lt 4 BSPC
+                                             &to 4     &trans         &trans     &lt 3 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
