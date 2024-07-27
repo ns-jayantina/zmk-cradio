@@ -76,6 +76,22 @@
          bindings = <&kp TAB>;
          key-positions = <11 12>;
         }; 
+        combo_up {
+         bindings = <&kp UARW>;
+         key-positions = <16 17>;
+        }; 
+        combo_down {
+         bindings = <&kp DARW>;
+         key-positions = <26 27>;
+        }; 
+        combo_right {
+         bindings = <&kp RARW>;
+         key-positions = <28 29>;
+        }; 
+        combo_left {
+         bindings = <&kp LARW>;
+         key-positions = <27 28>;
+        }; 
     };
 
 
@@ -93,8 +109,8 @@
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
         //    &kp Q         &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I      &kp O        &kp P
-        //    &kp V         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
-        //    &kp Z         &kp X       &kp C       &kp A       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
+        //    &kp A         HRML(S,     D,          F,          G)              HRMR(H,     J,          K,         L)           &kp SEMI
+        //    &kp Z         &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA  &kp DOT      &kp FSLH
         //                                          &lt 1 TAB   &kp ENTER       &kp SPACE   &lt 2 BSPC
               &kp Q         &kp W        &kp E         &kp R       &kp T       &hm LC(LA(DEL)) Y  &hm LG(LS(S)) U  &hm LG(LS(N5)) I  &kp O         &kp P
               &kp V         &hm LCTRL S  &hm LSHIFT D  &hm LALT F  &hm LGUI G  &hm RGUI H          &hm RALT J       &hm RSHIFT K     &hm RCTRL L   &kp SEMI
